@@ -1,5 +1,6 @@
 {
   "routes": [
+    "/",
     "/array",
     "/bindingandoutput",
     "/calculator",

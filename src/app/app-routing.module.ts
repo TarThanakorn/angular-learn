@@ -24,6 +24,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
+  { path: '**', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'first', component: FirstComponent },
   { path: 'calculator', component: CalculatorComponent },
