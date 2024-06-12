@@ -1,0 +1,25 @@
+{
+  "routes": [
+    "/array",
+    "/bindingandoutput",
+    "/calculator",
+    "/call",
+    "/directive",
+    "/first",
+    "/getset",
+    "/home",
+    "/input",
+    "/login",
+    "/maxminmeter",
+    "/ngif",
+    "/ngifelse",
+    "/primeng",
+    "/reactiveform",
+    "/request",
+    "/shopping",
+    "/stylebinding",
+    "/table",
+    "/twoway",
+    "/viewchild"
+  ]
+}
