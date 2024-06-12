@@ -1,0 +1,13 @@
+<header>
+    <title>6. [Excercise 1,2] Max Min Meter</title>
+</header>
+<!-- Square Brackets -->
+<h2>Square Brackets</h2>
+<p style="color: gray;">(has event-handler)</p>
+<app-max-min-meter [minLabel]="'myMinLabel'" [maxLabel]="'myMaxLabel'" (minChange)="showMin($event)"
+    (maxChange)="showMax($event)"></app-max-min-meter>
+
+<!-- String assign to variable -->
+<h2>String assign to variable</h2>
+<p style="color: gray;">(no event-handler)</p>
+<app-max-min-meter minLabel="myMinLabel" maxLabel="myMaxLabel"></app-max-min-meter>

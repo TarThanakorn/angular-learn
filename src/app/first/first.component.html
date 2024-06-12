@@ -1,0 +1,12 @@
+<header>
+    <title>1. First Component</title>
+</header>
+Hello, world Angular
+This is my title {{title}}
+<br />
+My name is {{name}}
+<button type="button" (click)="sendAlert()">Send Alert</button>
+<br />
+<input type="text" #newname id="newname" placeholder="Enter new name" maxlength="20" required>
+<button type="button" (click)="changeName(newname.value)">Change Name</button>
+<button type="button" (click)="newname.value = '';this.name = 'Thanakorn'">Clear</button>

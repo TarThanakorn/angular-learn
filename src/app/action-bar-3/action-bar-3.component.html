@@ -1,0 +1,9 @@
+<div>
+    <button type="button" (click)="decrease()">-</button>
+    <!-- Property Binding -->
+    <input type="number" [value]="counter" *ngIf="inputDisplay else elseTemplate">
+    <ng-template #elseTemplate>
+        <span style="font-size: 20px; font-weight: bold; margin: 5px;">{{counter}}</span>
+    </ng-template>
+    <button type="button" (click)="increase()">+</button>
+</div>

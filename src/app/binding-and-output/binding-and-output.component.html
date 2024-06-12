@@ -1,0 +1,6 @@
+<header>
+    <title>5. Event Binding & Output Component & EventEmitter</title>
+</header>
+Step = 5<app-action-bar-2 (counterChange)="onNumberChange()" [step]="5"></app-action-bar-2>
+<br/>
+Step = 10 (EventEmitter)<app-action-bar-2 (counterChange)="showNumberChange($event)" [step]="10"></app-action-bar-2>

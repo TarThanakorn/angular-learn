@@ -1,0 +1,31 @@
+<div>
+    <div>BMI: {{bmi}}</div>
+</div>
+<div class="container">
+    <div class="container-inner">
+        <input type="number" [formControl]="weightForm" pInputText placeholder="Weight (kg.)">
+        <span class="warning" *ngIf="weightForm.invalid && weightForm.touched">กรุณากรอกน้ำหนัก</span>
+    </div>
+    <div class="container-inner">
+        <input type="number" [formControl]="heightForm" pInputText placeholder="Height (cm.)">
+        <span class="warning" *ngIf="heightForm.invalid && heightForm.touched">กรุณากรอกส่วนสูง</span>
+    </div>
+    <div class="container-inner">
+        <p-button label="Calculate BMI" (onClick)="calculateBMI()"></p-button>
+    </div>
+</div>
+
+<hr>
+<div class="container">
+    <label for="email">Email</label>
+    <input class="input-email" type="text" (ngModelChange)="setError('error1')" [formControl]="emailForm" pInputText placeholder="example@mail.com">
+    <span class="warning-red" *ngIf="emailForm.invalid && emailForm.touched"><i class="pi pi-times" style="color: red"></i> {{error1}}</span>
+</div>
+
+<hr>
+<div class="container">
+    <label for="idcard">ID Card</label>
+    <input class="input-email" type="text" (ngModelChange)="setError('error2')" [formControl]="idForm" pInputText placeholder="1234xxxxxxxxx">
+    <span class="warning-red" *ngIf="idForm.invalid && idForm.touched"><i class="pi pi-times" style="color: red"></i> {{error2}}</span>
+    <span class="warning-green" *ngIf="!idForm.errors?.['idCard'] && idForm.valid && idForm.touched"><i class="pi pi-check" style="color: green"></i> ID Card ถูกต้อง</span>
+</div>

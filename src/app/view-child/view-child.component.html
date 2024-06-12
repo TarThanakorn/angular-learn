@@ -1,0 +1,8 @@
+<div>
+    <input type="checkbox" id="toggle-checkbox" [(ngModel)]="isShowImage" />
+    <label for="toggle-checkbox">Show </label>
+    <button (click)="smallImage()">Small</button>
+    <button (click)="mediumImage()">Medium</button>
+    <button (click)="largeImage()">Large</button>
+</div>
+<img *ngIf="isShowImage" #image class="transition-width" [style.--width.px]="widthValue" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="Image">

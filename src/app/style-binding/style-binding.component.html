@@ -1,0 +1,22 @@
+<header>
+    <title>7. Style Binding</title>
+</header>
+<app-square-flex [divWidth]="squareWidth" [divHeight]="squareHeight"></app-square-flex>
+<div>
+    width:
+    <button type="button" (click)="squareWidth=50">50px</button>
+    <button type="button" (click)="squareWidth=100">100px</button>
+    <button type="button" (click)="squareWidth=200">200px</button>
+    <br/>
+    Custom Width: <input #width type="number">
+    <button type="button" (click)="changeWidth(width.value)">Custom</button>
+</div>
+<div>
+    height:
+    <button type="button" (click)="squareHeight=50">50px</button>
+    <button type="button" (click)="squareHeight=100">100px</button>
+    <button type="button" (click)="squareHeight=200">200px</button>
+    <br/>
+    Custom Height: <input #height type="number">
+    <button type="button" (click)="changeHeight(height.value)">Custom</button>
+</div>

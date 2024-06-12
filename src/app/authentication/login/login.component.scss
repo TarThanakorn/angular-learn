@@ -1,0 +1,22 @@
+
+p-message[severity="danger"] {
+    color: red !important;
+    font-size: 1px !important;
+}
+.container{
+    display: grid;
+    grid-template-rows: 6em 1fr;
+    height: 97vh;
+}
+.container-header{
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 0.5em;
+    column-gap: 1em;
+    place-items: center;
+}
+.container-login{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}

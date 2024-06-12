@@ -1,0 +1,8 @@
+<!-- Structural Directive (*ngFor) -->
+<button (click)="pushCustomer()">Push</button>
+<button (click)="unshiftCustomer()">Unshift</button>
+<ul>
+    <li *ngFor="let customer of customerList; let i = index">{{customer}}
+        <button (click)="removeCustomer(i)">Remove</button>
+    </li>
+</ul>

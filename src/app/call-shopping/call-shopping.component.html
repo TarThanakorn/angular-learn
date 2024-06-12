@@ -1,0 +1,25 @@
+<!-- <app-shopping-cart></app-shopping-cart> -->
+<app-shopping-search (onSearch)="searchProduct($event)"></app-shopping-search>
+<p-table 
+    [value]="filteredProduct" 
+    [scrollable]="true" 
+    scrollHeight="500px" 
+    [virtualScroll]="true"
+    [virtualScrollItemSize]="46">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th style="width: 20%;">Name</th>
+                <th style="width: 20%;">Price</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product let-columns="columns">
+            <tr style="height:46px">
+                <td>
+                    {{product.name}}
+                </td>
+                <td>
+                    {{product.price}}
+                </td>
+            </tr>
+        </ng-template>
+</p-table>
