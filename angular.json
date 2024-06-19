@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "https://github.com/TarThanakorn/angular-learn",
+            //"baseHref": "https://github.com/TarThanakorn/angular-learn",
             "outputPath": "dist/angular-project",
             "index": "src/index.html",
             "browser": "src/main.ts",

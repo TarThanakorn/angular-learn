@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class CalculatorComponent {
   pricePerUser = 0;
   calculateSharing(price: string) {
-
     const PRICE = Number(price);
     if (PRICE <= 0) {
       alert("ราคาต้องมีค่ามากกว่า 0");

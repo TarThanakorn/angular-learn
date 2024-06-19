@@ -16,14 +16,14 @@
 </div>
 
 <hr>
-<div class="container">
+<div class="container2">
     <label for="email">Email</label>
     <input class="input-email" type="text" (ngModelChange)="setError('error1')" [formControl]="emailForm" pInputText placeholder="example@mail.com">
     <span class="warning-red" *ngIf="emailForm.invalid && emailForm.touched"><i class="pi pi-times" style="color: red"></i> {{error1}}</span>
 </div>
 
 <hr>
-<div class="container">
+<div class="container2">
     <label for="idcard">ID Card</label>
     <input class="input-email" type="text" (ngModelChange)="setError('error2')" [formControl]="idForm" pInputText placeholder="1234xxxxxxxxx">
     <span class="warning-red" *ngIf="idForm.invalid && idForm.touched"><i class="pi pi-times" style="color: red"></i> {{error2}}</span>

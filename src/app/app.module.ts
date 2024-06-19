@@ -37,10 +37,11 @@ import { LoginComponent } from './authentication/login/login.component';
 import { PasswordModule } from 'primeng/password';
 import { MessageModule } from 'primeng/message';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ReactiveFormComponent } from './authentication/reactive-form/reactive-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { CookieService } from 'ngx-cookie-service';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { CookieService } from 'ngx-cookie-service';
     MessageModule,
     FormsModule,
     ReactiveFormsModule,
-    ToolbarModule
+    ToolbarModule,
+    SweetAlert2Module
   ],
   providers: [
     provideClientHydration(),

@@ -14,7 +14,6 @@ export class MaxMinMeterComponent {
     this.minChange.emit(counter);
   }
   onMaxChange(counter: number){
-    //alert("Now Max = "+ counter);
     this.maxChange.emit(counter);
   }
 }

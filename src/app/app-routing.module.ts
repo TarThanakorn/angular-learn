@@ -19,13 +19,12 @@ import { CallShoppingComponent } from './call-shopping/call-shopping.component';
 import { GetSetComponent } from './get-set/get-set.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { LoginComponent } from './authentication/login/login.component';
-import { ReactiveFormComponent } from './authentication/reactive-form/reactive-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
-  { path: '**', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'first', component: FirstComponent },
   { path: 'calculator', component: CalculatorComponent },
@@ -47,7 +46,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'reactiveform', component: ReactiveFormComponent },
   { path: 'viewchild', component: ViewChildComponent },
-  
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

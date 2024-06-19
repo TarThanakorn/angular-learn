@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class NgifElseComponent {
   view:boolean = true;
   changeView(){
-    if (this.view == false) this.view = true;
-    else  this.view = false;
+    this.view = !this.view;
   }
 }

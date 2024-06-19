@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class NgifComponent {
   view:boolean = false;
   toggleView(){
-    if (this.view == false) this.view = true;
-    else  this.view = false;
+    this.view = !this.view;
   }
 }
